@@ -1,0 +1,67 @@
+module.exports = {
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "arrow-parens": ["error", "always"],
+        "import-order-alphabetical/order": "off",
+        "import/order": ["error", { "newlines-between": "always" }],
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}],
+        "import/prefer-default-export": "off",
+        "no-shadow": "off",
+        "no-unused-expressions": "off",
+        "no-unused-vars": "error",
+        "no-constant-condition": "off",
+        "no-useless-constructor": "warn",
+        "no-multi-spaces": "error",
+        "comma-dangle": [
+            "error",
+            "always-multiline",
+        ],
+        "quotes": ["error", "single"],
+        "max-len": [
+            "error",
+            120,
+            2,
+        ],
+        "object-curly-spacing": [
+            "error",
+            "always",
+        ],
+        "semi": [
+            "error",
+            "never",
+        ],
+
+        "object-curly-newline": "off",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true,
+            },
+        ],
+    },
+    "settings": {
+        "react": {
+            "version": 'latest',
+        },
+    }
+};
